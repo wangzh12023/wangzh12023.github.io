@@ -1,0 +1,50 @@
+site_name: Wangzh
+
+# Copyright
+copyright: 'Copyright &copy; 2020-2024 Wangzh'
+
+
+
+theme:
+  name: material
+  logo: assets/avatar.png
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+  - navigation.top
+  - navigation.tabs
+  - content.code.copy # 代码块复制按键
+  - search.suggest # 搜索建议
+  - search.highlight # 搜索结果高亮/突出显示
+  - search.share # 搜索结果分享
+
+  
+markdown_extensions:
+  - toc:
+      permalink: "¶"
+  - pymdownx.emoji:
+
+plugins:
+  - blog:
+  - search
+  - tags
+  - git-revision-date-localized: # 页面下方创建和修改时间
+      enable_creation_date: true
+      type: timeago
+
+  - statistics: # 统计页面字数、代码行数、阅读时间
+      page_read_time: true
+      page_check_metadata: comments
+# extra:
+#   homepage: index.html  # 指定你的自定义HTML文件名
