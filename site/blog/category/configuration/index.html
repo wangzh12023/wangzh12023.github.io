@@ -765,115 +765,15 @@
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 42 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 98 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 1 分钟</p>
 </div>
-<p>翻到已经结课的cs100，Update一下gkxx__的配置文件
-<del><code>你们已经长大了，应该学着自己写configure files了</code></del></p>
-<blockquote>
-<p>All in <code>.vscode</code></p>
-</blockquote>
-<p><code>c_cpp_properties.json</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;configurations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">      </span><span class="p">{</span>
-<span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Win32&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;compilerPath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Your_Path\\mingw64\\bin\\gcc.exe&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;cStandard&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;c17&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;cppStandard&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;c++17&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;intelliSenseMode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;windows-gcc-x64&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;compilerArgs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">              </span><span class="s2">&quot;-Wall&quot;</span><span class="p">,</span>
-<span class="w">              </span><span class="s2">&quot;-Wpedantic&quot;</span><span class="p">,</span>
-<span class="w">              </span><span class="s2">&quot;-Wextra&quot;</span>
-<span class="w">          </span><span class="p">]</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
-<span class="p">}</span>
-</code></pre></div>
-<p><code>settings.json</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;files.associations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;*.go&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;go&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;iostream&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;array&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;deque&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;string&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;unordered_map&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;vector&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;string_view&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;initializer_list&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;stdexcept&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;iosfwd&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;atomic&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;bit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;*.tcc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;cctype&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;clocale&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;cmath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;compare&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;concepts&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;cstdarg&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;cstddef&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;cstdint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;cstdio&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;cstdlib&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;cwchar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;cwctype&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;exception&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;algorithm&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;functional&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;iterator&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;memory&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;memory_resource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;numeric&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;optional&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;random&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;system_error&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;tuple&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;type_traits&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;utility&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;istream&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;limits&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;new&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;numbers&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;ostream&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;streambuf&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;typeinfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;stdbool.h&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;c&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;map&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;set&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cpp&quot;</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-<p><code>tasks.json</code>:
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;tasks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cppbuild&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;C/C++: gcc.exe 生成活动文件&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Your_Path\\mingw64\\bin\\gcc.exe&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;-fdiagnostics-color=always&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;-g&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;${file}&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;-o&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;${fileDirname}\\${fileBasenameNoExtension}.exe&quot;</span>
-<span class="w">      </span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;cwd&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;${fileDirname}&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;problemMatcher&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;$gcc&quot;</span>
-<span class="w">      </span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;group&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;kind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;build&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;isDefault&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;调试器生成的任务。&quot;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2.0.0&quot;</span>
-<span class="p">}</span>
-</code></pre></div></p>
+<p>翻到已经结课的cs100，Update一下gkxx__的配置文件</p>
+<p><del><code>你们已经长大了，应该学着自己写configure files了</code></del></p>
+
+    
+      <nav class="md-post__action">
+        <a href="../../2024/08/23/gkxx__%E7%9A%84vscode/">
+          Continue reading
+        </a>
+      </nav>
     
   </div>
 </article>
