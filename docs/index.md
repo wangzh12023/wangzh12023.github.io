@@ -1,3 +1,3 @@
 <!-- docs/index.md -->
 
-<meta http-equiv="refresh" content="0; url=Home/home.html">
+<meta http-equiv="refresh" content="0; url=Home/home2.html">
