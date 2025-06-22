@@ -65,5 +65,5 @@ plugins:
   - statistics: # 统计页面字数、代码行数、阅读时间
       page_read_time: true
       page_check_metadata: comments
-# extra:
-#   homepage: index.html  # 指定你的自定义HTML文件名
+extra:
+  homepage: Home/home2.html # 指定你的自定义HTML文件名
